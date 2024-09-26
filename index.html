@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Deployment to Amazon ECS</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #2e8b57, #20b2aa);
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        padding: 10px 30px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 20px;
+        width: 80%;
+        z-index: 1000;
+      }
+
+      .navbar button {
+        border: none;
+        background: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 10px 25px;
+        margin: 0 10px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .navbar button:hover {
+        background-color: #ff7f50;
+        transform: scale(1.1);
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 2s ease;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #ffebcd;
+        animation: slideUp 1.5s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <button>Home</button>
+      <button>Services</button>
+      <button>About Us</button>
+    </div>
+    <h1>My First Site Deployed to ECS2</h1>
+    <p>Abel Ngaliema</p>
+  </body>
+</html>
